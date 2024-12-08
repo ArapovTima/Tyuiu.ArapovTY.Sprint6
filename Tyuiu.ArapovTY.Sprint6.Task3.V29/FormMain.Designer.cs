@@ -35,8 +35,8 @@
             buttonDone_ATY = new Button();
             buttonHelp_ATY = new Button();
             groupBoxResult_ATY = new GroupBox();
-            textBoxRes_ATY = new TextBox();
             textBoxResult_ATY = new TextBox();
+            textBoxRes_ATY = new TextBox();
             groupBoxCondition_ATY.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewRes_ATY).BeginInit();
             groupBoxResult_ATY.SuspendLayout();
@@ -87,7 +87,7 @@
             // buttonDone_ATY
             // 
             buttonDone_ATY.BackColor = Color.White;
-            buttonDone_ATY.Location = new Point(649, 402);
+            buttonDone_ATY.Location = new Point(783, 402);
             buttonDone_ATY.Name = "buttonDone_ATY";
             buttonDone_ATY.Size = new Size(139, 36);
             buttonDone_ATY.TabIndex = 6;
@@ -98,7 +98,7 @@
             // buttonHelp_ATY
             // 
             buttonHelp_ATY.BackColor = Color.White;
-            buttonHelp_ATY.Location = new Point(586, 402);
+            buttonHelp_ATY.Location = new Point(720, 402);
             buttonHelp_ATY.Name = "buttonHelp_ATY";
             buttonHelp_ATY.Size = new Size(57, 36);
             buttonHelp_ATY.TabIndex = 6;
@@ -110,12 +110,21 @@
             // 
             groupBoxResult_ATY.Controls.Add(textBoxResult_ATY);
             groupBoxResult_ATY.Controls.Add(textBoxRes_ATY);
-            groupBoxResult_ATY.Location = new Point(564, 12);
+            groupBoxResult_ATY.Location = new Point(564, 25);
             groupBoxResult_ATY.Name = "groupBoxResult_ATY";
-            groupBoxResult_ATY.Size = new Size(224, 384);
+            groupBoxResult_ATY.Size = new Size(374, 371);
             groupBoxResult_ATY.TabIndex = 7;
             groupBoxResult_ATY.TabStop = false;
             groupBoxResult_ATY.Text = "Вывод данных";
+            groupBoxResult_ATY.Enter += groupBoxResult_ATY_Enter;
+            // 
+            // textBoxResult_ATY
+            // 
+            textBoxResult_ATY.Location = new Point(6, 62);
+            textBoxResult_ATY.Multiline = true;
+            textBoxResult_ATY.Name = "textBoxResult_ATY";
+            textBoxResult_ATY.Size = new Size(331, 303);
+            textBoxResult_ATY.TabIndex = 1;
             // 
             // textBoxRes_ATY
             // 
@@ -127,19 +136,11 @@
             textBoxRes_ATY.TabIndex = 0;
             textBoxRes_ATY.Text = "Результат:";
             // 
-            // textBoxResult_ATY
-            // 
-            textBoxResult_ATY.Location = new Point(6, 62);
-            textBoxResult_ATY.Multiline = true;
-            textBoxResult_ATY.Name = "textBoxResult_ATY";
-            textBoxResult_ATY.Size = new Size(212, 316);
-            textBoxResult_ATY.TabIndex = 1;
-            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(962, 450);
             Controls.Add(groupBoxResult_ATY);
             Controls.Add(buttonHelp_ATY);
             Controls.Add(buttonDone_ATY);

@@ -43,5 +43,10 @@ namespace Tyuiu.ArapovTY.Sprint6.Task3.V29
         {
             textBoxResult_ATY.Text = Convert.ToString(ds.Calculate(mtrx));
         }
+
+        private void groupBoxResult_ATY_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
