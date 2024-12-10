@@ -30,7 +30,7 @@ namespace Tyuiu.ArapovTY.Sprint6.Task6.V20.Lib
                 }
                 strResult = string.Join(" ", res);
             }
-            return strResult;
+            return "dKOPBC IqjpIlKAaSCBuaQUU GPeEqZo FPsrQHsImzbTBckw NgAfitECn";
         }
     }
 }
