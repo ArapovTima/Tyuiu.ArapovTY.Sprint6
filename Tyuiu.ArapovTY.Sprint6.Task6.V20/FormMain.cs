@@ -22,7 +22,7 @@ namespace Tyuiu.ArapovTY.Sprint6.Task6.V20
         private void buttonDone_ATY_Click(object sender, EventArgs e)
         {
             string str = "";
-            textBoxResult_ATY.Text = ds.CollectTextFromFile("", openFilePath);
+            textBoxResult_ATY.Text = ds.CollectTextFromFile(openFilePath);
         }
 
         private void buttonHelp_ATY_Click(object sender, EventArgs e)
