@@ -41,12 +41,25 @@ namespace Tyuiu.ArapovTY.Sprint6.Task3.V29
 
         private void buttonDone_ATY_Click(object sender, EventArgs e)
         {
-            textBoxResult_ATY.Text = Convert.ToString(ds.Calculate(mtrx));
-        }
+            int[,] res = ds.Calculate(mtrx);
+            int rows = mtrx.GetUpperBound(0) + 1;
+            int columns = mtrx.Length / rows;
 
-        private void groupBoxResult_ATY_Enter(object sender, EventArgs e)
-        {
+            dataGridViewResult_ATY.ColumnCount = columns;
+            dataGridViewResult_ATY.RowCount = rows;
 
+            for (int i = 0; i < columns; i++)
+            {
+                dataGridViewResult_ATY.Columns[i].Width = 50;
+            }
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewResult_ATY.Rows[i].Cells[j].Value = Convert.ToString(res[i, j]);
+                }
+            }
         }
     }
 }

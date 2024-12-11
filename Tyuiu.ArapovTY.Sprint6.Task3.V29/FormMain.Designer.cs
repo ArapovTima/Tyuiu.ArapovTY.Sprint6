@@ -35,11 +35,12 @@
             buttonDone_ATY = new Button();
             buttonHelp_ATY = new Button();
             groupBoxResult_ATY = new GroupBox();
-            textBoxResult_ATY = new TextBox();
+            dataGridViewResult_ATY = new DataGridView();
             textBoxRes_ATY = new TextBox();
             groupBoxCondition_ATY.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewRes_ATY).BeginInit();
             groupBoxResult_ATY.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewResult_ATY).BeginInit();
             SuspendLayout();
             // 
             // groupBoxCondition_ATY
@@ -108,7 +109,7 @@
             // 
             // groupBoxResult_ATY
             // 
-            groupBoxResult_ATY.Controls.Add(textBoxResult_ATY);
+            groupBoxResult_ATY.Controls.Add(dataGridViewResult_ATY);
             groupBoxResult_ATY.Controls.Add(textBoxRes_ATY);
             groupBoxResult_ATY.Location = new Point(564, 25);
             groupBoxResult_ATY.Name = "groupBoxResult_ATY";
@@ -116,15 +117,17 @@
             groupBoxResult_ATY.TabIndex = 7;
             groupBoxResult_ATY.TabStop = false;
             groupBoxResult_ATY.Text = "Вывод данных";
-            groupBoxResult_ATY.Enter += groupBoxResult_ATY_Enter;
             // 
-            // textBoxResult_ATY
+            // dataGridViewResult_ATY
             // 
-            textBoxResult_ATY.Location = new Point(6, 62);
-            textBoxResult_ATY.Multiline = true;
-            textBoxResult_ATY.Name = "textBoxResult_ATY";
-            textBoxResult_ATY.Size = new Size(331, 303);
-            textBoxResult_ATY.TabIndex = 1;
+            dataGridViewResult_ATY.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewResult_ATY.ColumnHeadersVisible = false;
+            dataGridViewResult_ATY.Location = new Point(6, 62);
+            dataGridViewResult_ATY.Name = "dataGridViewResult_ATY";
+            dataGridViewResult_ATY.RowHeadersVisible = false;
+            dataGridViewResult_ATY.RowHeadersWidth = 51;
+            dataGridViewResult_ATY.Size = new Size(362, 303);
+            dataGridViewResult_ATY.TabIndex = 1;
             // 
             // textBoxRes_ATY
             // 
@@ -153,6 +156,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewRes_ATY).EndInit();
             groupBoxResult_ATY.ResumeLayout(false);
             groupBoxResult_ATY.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewResult_ATY).EndInit();
             ResumeLayout(false);
         }
 
@@ -166,6 +170,6 @@
         private TextBox textBoxRes_ATY;
         private DataGridView dataGridViewRes_ATY;
         private DataGridViewTextBoxColumn Column1;
-        private TextBox textBoxResult_ATY;
+        private DataGridView dataGridViewResult_ATY;
     }
 }
