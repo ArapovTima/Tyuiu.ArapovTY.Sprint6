@@ -21,7 +21,7 @@ namespace Tyuiu.ArapovTY.Sprint6.Task7.V21.Lib
             }
             rows = arrayValues.GetUpperBound(0) + 1;
             columns = arrayValues.Length / rows;
-            int xCol = 8;
+            int xCol = 7;
             for (int r = 0; r < rows; r++)
             {
                 for (int c = xCol; c <= xCol; c++)
