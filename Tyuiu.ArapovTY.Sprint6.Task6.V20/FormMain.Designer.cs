@@ -115,6 +115,7 @@
             // buttonOpenFile_ATY
             // 
             buttonOpenFile_ATY.BackColor = SystemColors.Control;
+            buttonOpenFile_ATY.Image = (Image)resources.GetObject("buttonOpenFile_ATY.Image");
             buttonOpenFile_ATY.Location = new Point(7, 12);
             buttonOpenFile_ATY.Name = "buttonOpenFile_ATY";
             buttonOpenFile_ATY.Size = new Size(73, 48);
@@ -122,9 +123,13 @@
             toolTipTask_ATY.SetToolTip(buttonOpenFile_ATY, "Открыть файл\r\nВыберите нужный файл для обработки");
             buttonOpenFile_ATY.UseVisualStyleBackColor = false;
             buttonOpenFile_ATY.Click += buttonOpenFile_ATY_Click;
+            buttonOpenFile_ATY.MouseEnter += buttonOpenFile_ATY_MouseEnter;
             // 
             // buttonDone_ATY
             // 
+            buttonDone_ATY.Enabled = false;
+            buttonDone_ATY.FlatStyle = FlatStyle.Flat;
+            buttonDone_ATY.Image = (Image)resources.GetObject("buttonDone_ATY.Image");
             buttonDone_ATY.Location = new Point(100, 12);
             buttonDone_ATY.Name = "buttonDone_ATY";
             buttonDone_ATY.Size = new Size(72, 48);
@@ -135,6 +140,7 @@
             // 
             // buttonHelp_ATY
             // 
+            buttonHelp_ATY.Image = (Image)resources.GetObject("buttonHelp_ATY.Image");
             buttonHelp_ATY.Location = new Point(717, 12);
             buttonHelp_ATY.Name = "buttonHelp_ATY";
             buttonHelp_ATY.Size = new Size(75, 58);
@@ -142,6 +148,7 @@
             toolTipTask_ATY.SetToolTip(buttonHelp_ATY, "Показать информацию об ученике\r\n");
             buttonHelp_ATY.UseVisualStyleBackColor = true;
             buttonHelp_ATY.Click += buttonHelp_ATY_Click;
+            buttonHelp_ATY.MouseEnter += buttonHelp_ATY_MouseEnter;
             // 
             // FormMain
             // 

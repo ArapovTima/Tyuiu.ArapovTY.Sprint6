@@ -21,7 +21,7 @@ namespace Tyuiu.ArapovTY.Sprint6.Task6.V20
 
         private void buttonDone_ATY_Click(object sender, EventArgs e)
         {
-            string str = "";
+            toolTipTask_ATY.ToolTipTitle = "Выполнить";
             textBoxResult_ATY.Text = ds.CollectTextFromFile(openFilePath);
         }
 
@@ -29,6 +29,16 @@ namespace Tyuiu.ArapovTY.Sprint6.Task6.V20
         {
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
+        }
+
+        private void buttonOpenFile_ATY_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipTask_ATY.ToolTipTitle = "Открыть файл";
+        }
+
+        private void buttonHelp_ATY_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipTask_ATY.ToolTipTitle = "Справка";
         }
     }
 }
